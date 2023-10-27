@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head id="headforsign">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="signuppage">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <!-- <label for="name">Name : </label>     -->
+                        <input type="text" id="name" placeholder="name"><br>
+                    </div>
+                    
+                    <div class="input-field" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <!-- <label for="email">Email : </label>     -->
+                        <input type="text" id="email" placeholder="email"><br>
+                    </div>
+
+                    <div class="input-field" id="passwordField">
+                        <i class="fa-solid fa-lock"></i>
+                        <!-- <label for="password">Password : </label>     -->
+                        <input type="password" id="password" placeholder="password"><br>
+                    </div>
+                    <p>Lost password <a href="#">Click here !</a></p>
+                </div>
+                <div class="address-group" id="address-group">
+                    <div class="input-field" id="streetField">
+                        <i class="fa-solid fa-address-book"></i>
+                        <!-- <label for="name">Name : </label>     -->
+                        <input type="text" id="street" placeholder="street"><br>
+                    </div>
+        
+                    <div class="input-field" id="suburbField">
+                        <i class="fa-solid fa-address-book"></i>
+                        <!-- <label for="email">Email : </label>     -->
+                        <input type="text" id="suburb" placeholder="suburb"><br>
+                    </div>
+                    
+                    <div class="input-field" id="CityField">
+                        <i class="fa-solid fa-address-book"></i>
+                        <!-- <label for="password">Password : </label>     -->
+                        <input type="text" id="city" placeholder="city or town"><br>
+                    </div>
+
+                    <div class="input-field" id="ProvinceField">
+                        <i class="fa-solid fa-address-book"></i>
+                        <select name="Province" class="province-select">
+                            <option value="">Select Province</option>
+                            <option value="Western Cape">Western Cape</option>
+                            <option value="Eastern Cape">Eastern Cape</option>
+                            <option value="Northern Cape">Northern Cape</option>
+                            <option value="Gauteng">Gauteng</option>
+                            <option value="Kwa-Zulu Natal">Kwa-Zulu Natal</option>
+                            <option value="Free State">Free State</option>
+                            <option value="North West">North West</option>
+                            <option value="Mpumalanga">Mpumalanga</option>
+                            <option value="Limpopo">Limpopo</option>
+                        </select>
+                    </div>
+                    <div class="input-field" id="postalCodeField">
+                        <i class="fa-solid fa-address-book"></i>
+                        <!-- <label for="password">Password : </label>     -->
+                        <input type="text" id="postalCode" placeholder="Ex. 1234"><br>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign in</button>
+                </div>
+            </form>
+            <div class="popup" id="popup">
+                <img src="tick.png">
+                <h2>Thank you! </h2>
+                <p>Your details have been successfully submitted. Thanks ! </p>
+                <button type="button" id="okbtn"> OK </button>
+            </div>
+            
+    </div>
+
+<script src="loginscript.js"></script>
+</body>
+</html>
